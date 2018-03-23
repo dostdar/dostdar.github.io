@@ -1,25 +1,104 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-
-		</footer>
-	</body>
+<head>
+    <title>
+        js learn
+    </title>
+<!--    <link rel="stylesheet" href="style/style.css" type="text/css">-->
+    <style>
+    
+    body{
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+#content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat( 12 , 1fr);
+    grid-template-rows: repeat(4,minmax(150px , auto));
+    max-width: 960px;
+    margin: 0 auto;
+}
+#content div {
+    background: #3bbced;
+    padding: 30px;
+}
+#content div:nth-child(even) {
+    background:#777;
+}
+.one {
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 3;*/
+    grid-column: 1/3;
+    background: #123;
+    
+}
+.two {
+    /*grid-column-start: 3;*/
+    /*grid-column-end: 5;*/
+    grid-column: 3/10;
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 3;*/
+    grid-row: 1/2;
+}
+.three {
+    grid-column: 3/10;
+    grid-row: 5/6;
+}
+.six {
+    grid-column: 3/10;
+    grid-row: 2/5;
+}
+.four {
+    grid-column: 10/12;
+    grid-row: 2/6;
+}
+.five {
+    grid-column: 10/12;
+    grid-row: 1/2;
+}
+    
+    </style>
+    <meta charset="UTF-8">
+    <title>best way coing</title>
+</head>
+<body>
+<div id="content">
+    <div class="one">
+        we are best
+    </div>
+    <div class="two">
+        <h1>
+        887n2938r7v9233r9r9327r 
+        </h1>
+        <h2>
+            best way to coding in 21th century
+        </h2>
+    </div>
+    <div class="three">copyright by 665 </div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="six">
+    <span>
+        ما روش های مختلفی را تست کردیم بهترین روش کدگزاری روش 
+        <br>
+        <strong>
+        887n2938r7v9233r9327r9327r
+        </strong>
+        <br>
+        بود 
+        <br>
+        <hr>
+        <strong>
+        887n2938r7v9233r9327r9327r
+        </strong>
+        <br>
+        <span>
+        is srong way to cooing in new age
+        </span>
+        
+    </span>
+    </div>
+</div>
+</body>
 </html>
