@@ -1,0 +1,145 @@
+* {
+	transition: all 7s;
+}
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	background: rgb(152, 4, 4);
+	background: radial-gradient(
+		circle,
+		rgba(2, 4, 154, 1) 0%,
+		rgba(57, 13, 13, 1) 100%
+	);
+	justify-content: center;
+}
+
+.heart {
+	position: relative;
+	animation: shadowAnimation 1.5s ease-in-out 7s infinite alternate-reverse
+		both;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(172, 0, 0);
+	transform: rotate(45deg);
+	box-shadow: 15px 15px 200px rgb(107, 0, 0);
+}
+
+.heart::after {
+	content: "";
+	background-color: #fff;
+	width: 100px;
+	position: absolute;
+	height: 100px;
+	right: 0px;
+	top: 100px;
+	animation: anim1 5s 2s ease-in-out normal forwards;
+}
+
+@keyframes anim1 {
+	20% {
+		opacity: 1;
+		width: 100px;
+	}
+
+	30% {
+		width: 200px;
+		top: 0px;
+		top: 0px;
+	}
+	50% {
+		border-radius: 0 0 0 0;
+		top: -96px;
+		right: 0px;
+	}
+	75% {
+		background-color: #fff;
+		border-radius: 0 0 0 0;
+
+		width: 200px;
+		height: 100px;
+		opacity: 0.7;
+	}
+	100% {
+		background-color: rgb(172, 0, 0);
+		width: 200px;
+		height: 100px;
+		top: -96px;
+		right: 0px;
+		border-radius: 200px 200px 0 0;
+		opacity: 1;
+	}
+}
+
+.heart::before {
+	content: "";
+	background-color: #fff;
+	width: 100px;
+	position: absolute;
+	height: 100px;
+	opacity: 0.7;
+	right: 0px;
+	animation: anim2 5s 2s ease-in-out normal forwards;
+}
+
+@keyframes anim2 {
+	20% {
+		opacity: 1;
+		height: 100px;
+	}
+
+	30% {
+		height: 200px;
+		top: 0px;
+		right: 100px;
+	}
+	50% {
+		border-radius: 0 0 0 0;
+		right: 196px;
+		top: 0px;
+	}
+	75% {
+		background-color: #fff;
+		border-radius: 0 0 0 0;
+
+		width: 100px;
+		height: 200px;
+		opacity: 0.7;
+	}
+	100% {
+		background-color: rgb(172, 0, 0);
+		width: 100px;
+		height: 200px;
+		right: 196px;
+		border-radius: 200px 0 0 200px;
+		opacity: 1;
+	}
+}
+
+@keyframes shadowAnimation {
+	0% {
+		box-shadow: 15px 15px 200px rgb(107, 0, 0);
+	}
+
+	100% {
+		box-shadow: 30px 30px 200px rgb(23, 0, 107);
+	}
+}
+
+@keyframes BackAnimation {
+	0% {
+		background: radial-gradient(
+			circle,
+			rgba(57, 13, 13, 1) 0%,
+			rgba(2, 4, 154, 1) 100%
+		);
+	}
+
+	100% {
+		background: radial-gradient(
+			circle,
+			rgba(2, 4, 154, 1) 0%,
+			rgba(57, 13, 13, 1) 100%
+		);
+	}
+}
