@@ -118,28 +118,10 @@ body {
 
 @keyframes shadowAnimation {
 	0% {
+		box-shadow: 30px 30px 200px rgb(20, 173, 6);
+	}
+
+	100% {
 		box-shadow: 15px 15px 200px rgb(107, 0, 0);
-	}
-
-	100% {
-		box-shadow: 30px 30px 200px rgb(23, 0, 107);
-	}
-}
-
-@keyframes BackAnimation {
-	0% {
-		background: radial-gradient(
-			circle,
-			rgba(57, 13, 13, 1) 0%,
-			rgba(2, 4, 154, 1) 100%
-		);
-	}
-
-	100% {
-		background: radial-gradient(
-			circle,
-			rgba(2, 4, 154, 1) 0%,
-			rgba(57, 13, 13, 1) 100%
-		);
 	}
 }
